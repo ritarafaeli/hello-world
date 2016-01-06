@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Hello WOrld</title>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em;
+            }
+        </style>
+        
+        <!-- angularjs -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Home</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://dwa15.com/Home"><i class="fa fa-home"></i> DWA</a></li>
+                    <li><a href="https://laravel.com/"><i class="fa fa-home"></i> Laravel</a></li>        
+                    <li><a href="https://angularjs.org/"><i class="fa fa-home"></i> AngularJS</a></li>                    
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+            <div ng-controller="mainController">            
+                <div>
+                    <label>What is your name?</label>
+                    <input type="text" ng-model="name" />
+                </div>                
+                <hr />                
+                <h1>Welcome {{ name }}!</h1>                
+            </div>            
+		</div>
+
+    </body>
+</html>
