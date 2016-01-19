@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" ng-app="myApp">
     <head>
-        <title>Hello WOrld</title>
+        <title>Margarita Rafaeli - DWA Spring 2016</title>
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <style>
@@ -26,7 +26,7 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="http://dwa15.com/Home"><i class="fa fa-home"></i> DWA</a></li>
                     <li><a href="https://laravel.com/"><i class="fa fa-home"></i> Laravel</a></li>        
-                    <li><a href="https://angularjs.org/"><i class="fa fa-home"></i> AngularJS</a></li>                    
+                    <li><a href="https://angularjs.org/"><i class="fa fa-home"></i> AngularJS</a></li>
 				</ul>
 			</div>
 			</nav>
@@ -35,12 +35,33 @@
         <div class="container">
             <div ng-controller="mainController">            
                 <div>
-                    <label>What is your name?</label>
-                    <input type="text" ng-model="name" />
-                </div>                
-                <hr />                
-                <h1>Welcome {{ name }}!</h1>                
-            </div>            
+                    <h1>Margarita Rafaeli</h1>
+                    <p>Dynamic Web Applications | Spring 2016</p>
+                    
+                    <h3>Projects</h3>
+                    <ul>
+                        <li ng-repeat="project in projects" class="list-unstyled">
+                            {{ project.title }} | <a href="{{project.github}}">Github</a> | <a href="{{project.live}}">Live</a>                        
+                        </li>
+                    </ul>
+                    <h3>About Me</h3>
+                    <p>Hi, my name is Rita. I am a mother of 3 wonderful kids. I enjoy painting, sketching, programming, and teaching. My interest in technology sparked at the age of 12 when I started dabbling in HTML/CSS to create my own webpages, and later at 16 when I started learning PHP/MySQL to manage my artwork on a personal domain. In college, I chose to major in CS thanks to my Intro to Java professor. Now, I'm working full-time at Citi.</p>
+
+                    <h3>Why I Am Taking This Course</h3>
+                    <p>I would like to expand my breadth of knowledge and learn a new framework. In the long run, I plan on building something awesome :)</p>
+
+                    <h3>Programming Experience</h3>
+                    <p>I graduated Rutgers University with a BA in Computer Science in May 2011 and I have been working as a developer since then. I work primarily with Java.</p>
+
+                    <h3>Environment</h3>
+                    <p>Windows 8</p>
+            
+                    <h3>Anything Else?</h3>
+                    <p>I'm going to try to learn AngularJS alongside Laravel for this class.</p>
+                        
+                </div>
+                <hr />
+            </div>
 		</div>
 
     </body>
