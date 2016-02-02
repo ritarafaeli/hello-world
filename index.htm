@@ -16,20 +16,18 @@
         <script src="app.js"></script>
     </head>
     <body>
-
-        
-
-        <div class="panel panel-default">
-            
+        <div class="panel panel-default">            
                 <div class="panel-heading">
                     <h1>Margarita Rafaeli</h1>
                     <p>Dynamic Web Applications | Spring 2016</p>
-                </div>
+                </div>                
                 <div class="panel-body" ng-controller="mainController">
+                        <img src="ritarafaeli.jpg" class="img-rounded" width="200"/>
+                             
                         <h3>Projects</h3>
                         <ul>
                             <li ng-repeat="project in projects" class="list-unstyled">
-                                {{ project.title }} | <a href="{{project.github}}">Github</a> | <a href="{{project.live}}">Live</a>                        
+                                {{ project.title }} | <a href="{{project.github}}">Github</a> | <a href="{{project.live}}">Live</a>
                             </li>
                         </ul>
                         <h3>About Me</h3>
