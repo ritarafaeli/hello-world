@@ -6,7 +6,7 @@
 This "Hello World" project is created for the sole purpose of getting familiar with deploying to a live host, and re-familiarizing myself with basic web scripting.
 
 ##Demo
-TBU
+[screencast](http://www.screencast.com/t/PqK6038P0fY)
 
 ##Details
 None
