@@ -1,0 +1,28 @@
+ html, body{
+    font-size: 1.05em;
+    font-family: verdana;
+    color: #52527a;
+}
+
+h1{
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: bold;
+    color: #00004d;
+}
+
+a:link, a:visited {
+    color: #7575a3;
+}
+
+a:hover {
+    color: #b3b3cc;
+    text-decoration: line-through;
+}
+
+a:active {
+    color: #b3b3cc;
+}
